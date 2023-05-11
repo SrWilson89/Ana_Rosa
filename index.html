@@ -986,7 +986,7 @@
         'https://raw.githubusercontent.com/SrWilson89/Reel/main/img/artwork.png',
         ]; 
         const TIEMPO_INTERVALO_MILESIMAS_SEG = 1000; 
-        let posicionActual = 0; 
+        let posicionActual = Math.floor((Math.random() * 864) + 1); 
         let $botonRetroceder = document.querySelector('#retroceder'); 
         let $botonAvanzar = document.querySelector('#avanzar'); 
         let $imagen = document.querySelector('#imagen'); 
