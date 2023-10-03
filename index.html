@@ -128,11 +128,27 @@
     window.onload = function () { 
         // Variables 
         const IMAGENES = [ 
-        'https://raw.githubusercontent.com/SrWilson89/Reel/main/mama/07a3b85e-707c-40e5-ba92-562722ca2f0f.jpg'        
+        'http://www.alcaudetedelajara.es/images/Actualidad/Fotos_Carrousel/Flor-La-Jara.jpg', 
+        'http://www.alcaudetedelajara.es/images/Actualidad/Fotos_Carrousel/Iglesia-torre.jpg', 
+        'http://www.alcaudetedelajara.es/images/Actualidad/Fotos_Carrousel/Iglesia.JPG', 
+        'http://www.alcaudetedelajara.es/images/Actualidad/Fotos_Carrousel/Iglesia_1.jpg', 
+        'http://www.alcaudetedelajara.es/images/Actualidad/Fotos_Carrousel/Iglesia_y_Torren.jpg', 
+        'http://www.alcaudetedelajara.es/images/Actualidad/Fotos_Carrousel/La_presa_1.jpg', 
+        'http://www.alcaudetedelajara.es/images/Actualidad/Fotos_Carrousel/ayuntamiento-plaza.jpg', 
+        'http://www.alcaudetedelajara.es/images/Actualidad/Fotos_Carrousel/casa-solariega.jpg', 
+        'http://www.alcaudetedelajara.es/images/Actualidad/Fotos_Carrousel/escudo-forja.jpg', 
+        'http://www.alcaudetedelajara.es/images/Actualidad/Fotos_Carrousel/homenaje-caidos.jpg', 
+        'http://www.alcaudetedelajara.es/images/Actualidad/Fotos_Carrousel/jardines-regiones.jpg', 
+        'http://www.alcaudetedelajara.es/images/Actualidad/Fotos_Carrousel/molino-riscal.jpg', 
+        'http://www.alcaudetedelajara.es/images/Actualidad/Fotos_Carrousel/plaza-sagrado-corazon.jpg', 
+        'http://www.alcaudetedelajara.es/images/Actualidad/Fotos_Carrousel/pozo-1.jpg', 
+        'http://www.alcaudetedelajara.es/images/Actualidad/Fotos_Carrousel/torren-palmeras.jpg', 
+        'http://www.alcaudetedelajara.es/images/Actualidad/Fotos_Carrousel/torreon-huertacura.jpg', 
+        'http://www.alcaudetedelajara.es/images/Actualidad/Fotos_Carrousel/torreon.jpg'         
         ];
 
         const TIEMPO_INTERVALO_MILESIMAS_SEG = 1000; 
-        let posicionActual = Math.floor((Math.random() * 1) + 1); 
+        let posicionActual = 0; 
         let $botonRetroceder = document.querySelector('#retroceder'); 
         let $botonAvanzar = document.querySelector('#avanzar'); 
         let $imagen = document.querySelector('#imagen'); 
