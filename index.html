@@ -54,7 +54,7 @@
         cursor: pointer; 
         background-color: transparent;        
         border-style: solid;        
-        border: 15px solid #691b37;
+        border: 15px solid #4e4b6b;
         text-align: center;
     }
 
@@ -67,11 +67,19 @@
     }
 
     #retroceder:hover, #avanzar:hover{
-        border: 15px solid #1b694d;
+        border: 15px solid #003521;
     }
     
     @media only screen and (max-width: 600px) { 
+
+    #retroceder:hover, #avanzar:hover{
+    border: none;
+    }    
     
+    #retroceder, #avanzar{
+        border: none;
+    }
+
     .carousel { 
         flex-wrap: wrap !important; 
     } 
@@ -143,7 +151,7 @@
         ];
 
         const TIEMPO_INTERVALO_MILESIMAS_SEG = 1000; 
-        let posicionActual = Math.floor((Math.random() * 864) + 1); 
+        let posicionActual = Math.floor((Math.random() * 19) + 1); 
         let $botonRetroceder = document.querySelector('#retroceder'); 
         let $botonAvanzar = document.querySelector('#avanzar'); 
         let $imagen = document.querySelector('#imagen'); 
